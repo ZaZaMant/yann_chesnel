@@ -1,0 +1,178 @@
+body
+{
+    background-image: url(../images/rest/background_portfo_switch.gif);
+    color: black;
+    background-color: rgb(27, 26, 26);
+}
+
+header
+{
+    background-color: #b9c2c7;
+    padding: 3px;
+    
+}
+
+hr
+{
+    border-style: solid;
+    border-color: black;
+}
+
+
+p
+{
+    font-size: 70%;
+    text-align : center;
+}
+
+.navbar
+{
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+}
+
+.navbar > nav
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.bar
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    justify-content: space-between;
+}
+
+li
+{
+    padding: 0px 5px;
+}
+
+.navbar_div
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 3em;
+    width: 100%;
+}
+/*
+.navbar_div
+{
+    letter-spacing: 3px;
+    font-weight: 400;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Définir la distance à partir du haut de la fenêtre /
+    font-weight: 600;
+    z-index: 100;
+}
+*/
+section
+{
+    border-radius: 1px 0px 0px 0px;
+    background-color: #b9c2c7;
+    /* or silver */
+    margin: 10px 180px;
+    padding: 5px 10px;
+    border-style: solid;
+    border-width:3px;
+    border-color: white grey grey white;
+/*  faut que je le set up pour que ce soit que dans un angle (faudra
+changer la couleur aussi parce que la ça va pas mdrrr */
+}
+
+li > img
+{
+    height: 25%;
+    width: 25%;
+}
+
+li > img:hover
+{
+    height: 75%;
+    width: 75%;
+}
+
+
+footer
+{
+    background-color: black;
+}
+
+
+
+/*
+
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+*/
+
+
+
+
+.title_cube
+{
+    font-size: 300%;
+}
+
+.forma_title
+{
+    font-size: 250%;
+}
+
+.forma_date
+{
+    font-size: 125%;
+
+}
+
+.button
+{
+    background-color: black;
+    
+}
+
+.bandeau_prez
+{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+/* pour la font c'est pas ça, faudra aller chercher une font "pixel",
+"old school" "vieille" genre warframe 1980, mais pas celle de joelg,
+tout de même, je ne vais pas tout voler de ce site non plus ! */
+}
+
+a 
+{
+    text-decoration: underline;
+    color: white;
+}
