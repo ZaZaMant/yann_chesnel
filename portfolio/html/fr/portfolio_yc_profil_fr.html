@@ -5,33 +5,85 @@
 		<meta name="description" content=" Bienvenu sur mon site ! ">
 		<meta name="keywords" content= "">
 		<meta name="author" content="Yann Chesnel">
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../../css/style.css">
         <link rel="icon" type="image/png" sizes="16x16" href="../images/logo.png">
 		<title> Yann Chesnel </title>
 <!-- @media screen and (max-width: 640px) { -->
 </head>
 <body>
+  <header>
+    <section class="navbar">
+        <div class="navbar_div">
+          <a href="../fr/portfolio_yc_home_fr.html">
+            <img src="../../images/accueil.png" alt="Accueil" id="navbar_accueil">
+          </a>
+              <nav>
+                <div>
+                    <ul class="bar">
+                        <li><a href="./portfolio_yc_profil_fr.html">Profil</a></li>
+                        <li><a href="./portfolio_yc_IUT_fr.html">Projets IUT</a></li>
+                        <li><a href="./portfolio_yc_gallery_fr.html">Projets perso</a></li>
+                        <li><a href="#footer">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="../eng/portfolio_yc_profil_eng.html"> 
+              <img src="../../images/langue.png" alt="Ver.Anglaise" id="navbar_langue">
+            </a>
+        </div>
+    </section>
+</header>
+
   <div class="bandeau_prez">
-    <img src="../images/gifs/spinning_head.gif">
-    <h1> Profil </h1>
+    <!--<img src="../../images/gifs/spinning_head.gif"> -->
+    <h1> - Profil - </h1>
     <span> </span>
-    <img src="../images/gifs/spinning_head.gif">
+    <!--<img src="../../images/gifs/spinning_head.gif"> -->
 </div>
   <main>
     <section>
       <h2 class="title_cube"> A propos de moi </h2>
+      <hr>
       <p> Je m'appelle Yann Chesnel (vous l'avez probablement deviné),
         et je suis actuellement en première année d'informatique à l'IUT de Lannion
       pour un BUT (formation en 3 ans avec alternance possible dès la seconde
-      année). J'éprouve un certain intérêt pour l'informatique depuis très jeune
-    grâce aux jeux vidéos, et suite a ma spécialité NSI au lycée, j'ai décidé
+      année).<br><br> J'éprouve un certain intérêt pour l'informatique depuis très jeune
+    grâce aux jeux vidéos, et suite à ma spécialité NSI au lycée, j'ai décidé
   de continuer dans cette voie la.
       </p>
-      <hr>
+    </section>
+    <section>
       <h2 class="title_cube"> Formation </h2>
       <h3 class="forma_title"> IUT Lannion </h3>
       <h4 class="forma_date"> 2023-Aujourd'hui </h4>
-      <p> </p>
+      <hr>
+      <p> J'effectue actuellement ma première année de BUT informatique
+        à l'IUT de Lannion. J'y ai appris, la majorité de mes compétences,
+        et poli d'autres.
+      </p>
+    </section>
+    <section>
+      <h3 class="forma_title"> Lycée Amiral Ronarc'h - Brest </h3>
+      <h4 class="forma_date"> 2020-2023 </h4>
+      <hr>
+      <p>
+        C'est ici que j'ai obtenu mon Baccalauréat général avec les spécialités NSI (Numérique
+        et Sciences de l'Informatique) ainsi que LLCER (Langues,Littérature et 
+        Culture Ètrangère).<br><br> J'avais également l'option anglais Euro, et j'y ai Effectué
+        le test de Cambridge (que j'ai obtenu).<br><br>
+        J'ai également été très actif durant cette année dans la vie de mon lycée,
+        ayant participé a la réouverture de la cafetaria, et de certains clubs.
+      </p>
+
+      <h3 class="forma_title"> Mes centres d'intérêt </h3>
+      <hr>
+      <p>
+        J'ai un grand amour pour le jeux vidéo depuis l'enfance, c'est aussi
+        ce qui m'a mener a mon cursus scolaire actuel. Je lis aussi énormément
+        de manga, ce qui m'a donner envie d'apprendre a dessiner (vous pourrez
+        voir le résultat dans ma partie <a href="./portfolio_yc_gallery_fr.html">gallerie</a>).
+      </p>
+    </section>
 
 <!-- 2019-2022
 
@@ -48,10 +100,35 @@ Baccalauréat au lycée Aristide Briand à Saint Nazaire. J'ai fais les spécial
 IUT de Lannion
 
 Je suis actuellement en première année de BUT informatique à l'IUT de Lannion. J'entame ma deuxième année en septembre 2023, je réalise cette année en alternance à l'entreprise Capgemini à Rennes.-->
-
-        
+     
       </div>
     </section>
   </main>
+  <footer id="footer">
+    <article>
+        <h2> Coordonnées </h2>
+        <ul>
+            <li><a href="">Lannion</a></li>
+            <li><a href="">Brest</a></li>
+        </ul>
+    </article>
+    <article>
+        <h2> Navigation </h2>
+        <ul>
+            <li><a href="">Profil</a></li>
+            <li><a href="">Projets_IUT</a></li>
+            <li><a href="">Projets_perso</a></li>
+            <li><a href="">Contacts</a></li>
+        </ul>
+    </article>
+    <article>
+        <h2> Contacts </h2>
+        <ul>
+            <li><a href="">Mail</a></li>
+            <li><a href="">Mon CV</a></li>
+            <li><a href="">Instagram</a></li>
+        </ul>
+    </article>
+</footer>
 </body>
 </html>

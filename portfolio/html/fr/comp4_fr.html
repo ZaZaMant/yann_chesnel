@@ -5,31 +5,62 @@
 		<meta name="description" content=" Bienvenu sur mon site ! ">
 		<meta name="keywords" content= "">
 		<meta name="author" content="Yann Chesnel">
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../../css/style.css">
         <link rel="icon" type="image/png" sizes="16x16" href="../images/logo.png">
 		<title> Yann Chesnel </title>
 <!-- @media screen and (max-width: 640px) { -->
 </head>
 <body>
+  <header>
+    <section class="navbar">
+        <div class="navbar_div">
+          <a href="../fr/portfolio_yc_home_fr.html">
+            <img src="../../images/accueil.png" alt="Accueil" id="navbar_accueil">
+          </a>
+            <nav>
+                <div>
+                    <ul class="bar">
+                        <li><a href="./portfolio_yc_profil_fr.html">Profil</a></li>
+                        <li><a href="./portfolio_yc_IUT_fr.html">Projets_IUT</a></li>
+                        <li><a href="./portfolio_yc_gallery_fr.html">Projets_perso</a></li>
+                        <li><a href="#footer">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="../eng/portfolio_yc_gallery_eng.html">
+                    <img src="../../images/langue.png" alt="Ver.Anglaise" id="navbar_langue">
+                </a>
+        </div>
+    </section>
+</header>
     <main>
       <section>
-        <h2 class="title_cube"> Création d’une Base De Donnée </h2>
+        <h2 class="title_cube"> Création d’une Base De Donnée (D) </h2>
         <hr>
-        <p> Projet réalisé en binôme, il nous fallait réaliser une Base de Données 
-          pour gérer un établissement ( ce qui comprend les élèves, les enseignants, 
-          leurs matière, les heures de cours…).
-          En premier lieu on aura réaliser un schéma UML sur Visual Paradigme en analysant
-           les besoins et les contraintes. Et enfin il ne nous restait plus qu’à créer 
-           la Base de Données, qui fût finalisée en SQL sur SQL Workbench.
-          </p>
-        <img>
-        <img>
-        <img>
+        <div class="pres_proj">
+          <p> Projet réalisé en binôme, il nous fallait réaliser une Base de Données 
+            pour gérer un établissement ( ce qui comprend les élèves, les enseignants, 
+            leurs matière, les heures de cours…).
+            En premier lieu on aura réaliser un schéma UML sur Visual Paradigme en analysant
+            les besoins et les contraintes. Et enfin il ne nous restait plus qu’à créer 
+            la Base de Données, qui fût finalisée en SQL sur SQL Workbench.
+            </p>
+          <a href="https://github.com/ZaZaMant/bazar/tree/main/SAE%201.04"><img src="../../images/rest/diagram_bdd.jpg"></a>
+        </div>
 <!-- faut mettre les images des trucs qu'on a utilisé / appris -->
       </section>
       <section>
-        <h2 class="title_cube"> </h2>
+        <h2 class="title_cube"> Les autres compétences : </h2>
         <p></p>
+      </section>
+      <section class="button">
+        <ul>
+          <li> <a href="./comp1_fr.html"> compétence 1 (A) </a> </li>
+          <li> <a href="./comp2_fr.html"> compétence 2 (B) </a> </li>
+          <li> <a href="./comp3_fr.html"> compétence 3 (C) </a> </li>
+          <li> <a href="./comp5_fr.html"> compétence 5 (D) </a> </li>
+          <li> <a href="./comp6_fr.html"> compétence 6 (E) </a> </li>
+        </ul>
       </section>
     </main>
   </body>

@@ -1,3 +1,17 @@
+
+
+@font-face {
+    font-family: "joystix_monospace";
+    src: url("../fonts/joystix\ monospace.otf") format("opentype");
+}
+
+@font-face
+{
+    font-family: "FForward";
+    src:url("../fonts/FFFFORWA.TTF") format(truetype)
+}
+
+
 body
 {
     background-image: url(../images/rest/background_portfo_switch.gif);
@@ -9,7 +23,28 @@ header
 {
     background-color: #b9c2c7;
     padding: 3px;
-    
+}
+
+.navbar_div > a > img
+{
+    max-width: 100%;
+    height: 20%;
+    width: 20%;
+}
+
+li > a
+{
+    text-decoration: none;
+}
+
+.navbar_div > a
+{
+    width: 20%;
+}
+
+nav
+{
+    width: 60%;
 }
 
 hr
@@ -21,8 +56,18 @@ hr
 
 p
 {
-    font-size: 70%;
+    font-family: "joystix_monospace";
+    font-size: 200%;
     text-align : center;
+    padding: 50px;
+}
+
+q
+{
+    font-family: 'FForward';
+    font-size: 200%;
+    text-align : center;
+    padding: 50px;
 }
 
 .navbar
@@ -31,7 +76,7 @@ p
     text-align: center;
     display: flex;
     flex-direction: row;
-    width: 96%;
+    width: 97%;
 }
 
 .navbar > nav
@@ -47,6 +92,8 @@ p
     flex-wrap: nowrap;
     list-style: none;
     justify-content: space-between;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 li
@@ -60,8 +107,8 @@ li
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-around;
-    padding: 0 3em;
+    justify-content: space-between;
+    padding: 0 2em;
     width: 100%;
 }
 /*
@@ -84,28 +131,70 @@ section
     margin: 10px 180px;
     padding: 5px 10px;
     border-style: solid;
-    border-width:3px;
+    border-width:4px;
     border-color: white grey grey white;
 /*  faut que je le set up pour que ce soit que dans un angle (faudra
 changer la couleur aussi parce que la ça va pas mdrrr */
+}
+
+section > section
+{
+    margin: 10px 60px;
+    padding: 5px 10px;
+}
+
+.icons
+{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons > img
+{
+    width: 10%;
+    height: 10%;
+}
+
+.cmatete 
+{
+    width: 25%;
+    height: 25%;
+}
+
+.bandeau_prez > h1
+{
+    text-align: center;
+    background-color: black;
+    margin: 6% 10px 6% 0px;
+    font-size: 350%;
 }
 
 li > img
 {
     height: 25%;
     width: 25%;
+    transition: transform 0.5s ease;
 }
 
 li > img:hover
 {
+    transform: scale(1.5);
+    /*
     height: 75%;
     width: 75%;
+    */
 }
 
 
 footer
 {
     background-color: black;
+    bottom: 0;
 }
 
 
@@ -142,28 +231,102 @@ span.onclick = function() {
 
 .title_cube
 {
+    font-family: 'FFORWARD';
     font-size: 300%;
 }
 
 .forma_title
 {
+    font-family: 'FFORWARD';
     font-size: 250%;
 }
 
 .forma_date
 {
+    font-family: 'FFORWARD';
     font-size: 125%;
 
 }
 
 .button
 {
-    background-color: black;
+    display: flex;
+}
+
+.button > ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 600;
+    width: 100%;
+    padding: 0px;
+}
+
+.button > ul > a
+{
     
+    text-decoration: none;
+}
+
+.button > ul > li > a
+{
+    background-color: black;
+    padding: 20px;
+    border-style: dashed;
+    border-radius: 1px;
+    border-color: white grey grey white;
+}
+
+.navbar > nav
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.pres_proj
+{
+    display: block;
+    text-align: center;
+}
+
+.pres_proj > a > img
+{
+    height: 70%;
+    width: 70%;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-radius: 1px;
+    border-color: white grey grey white;
+}
+
+.basic_link
+{
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    border-style: dashed;
+    border-radius: 1px;
+    border-color: white grey grey white;
+}
+
+.big_sect
+{
+    padding-bottom: 50px;
+}
+
+.big_sect > hr
+{
+    margin-bottom: 60px ;
 }
 
 .bandeau_prez
 {
+    
     color: white;
     font-family: 'Courier New', Courier, monospace;
 /* pour la font c'est pas ça, faudra aller chercher une font "pixel",
