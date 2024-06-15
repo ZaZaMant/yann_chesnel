@@ -162,8 +162,9 @@ section > section
 
 .cmatete 
 {
-    width: 25%;
-    height: 25%;
+    text-align: end;
+    
+    width: 250px;
 }
 
 .bandeau_prez > h1
@@ -333,6 +334,21 @@ span.onclick = function() {
 "old school" "vieille" genre warframe 1980, mais pas celle de joelg,
 tout de même, je ne vais pas tout voler de ce site non plus ! */
 }
+
+.nom_pre_age_cv_tronche
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.nom_pre_age_cv_tronche > div > h2
+{
+    font-size: 300%;
+}
+
+
 
 a 
 {
