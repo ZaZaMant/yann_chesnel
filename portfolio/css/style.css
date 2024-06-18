@@ -70,6 +70,15 @@ q
     padding: 50px;
 }
 
+blockquote
+{
+    font-family: 'FForward';
+    font-size: 200%;
+    text-align : center;
+    padding: 50px;
+    width: 50%;
+}
+
 .navbar
 {
     margin: 5px;
@@ -128,7 +137,7 @@ section
     border-radius: 1px 0px 0px 0px;
     background-color: #b9c2c7;
     /* or silver */
-    margin: 10px 180px;
+    margin: 30px 180px;
     padding: 5px 10px;
     border-style: solid;
     border-width:4px;
@@ -175,16 +184,34 @@ section > section
     font-size: 350%;
 }
 
-li > img
+.gallery
 {
-    height: 25%;
-    width: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.gallery > div
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery > img
+{
+    padding-left: 50px;
+    height: 30%;
+    width: 30%;
     transition: transform 0.5s ease;
 }
 
-li > img:hover
+.gallery > img:hover
 {
-    transform: scale(1.5);
+    transform: scale(1.75);
     /*
     height: 75%;
     width: 75%;
@@ -196,6 +223,40 @@ footer
 {
     background-color: black;
     bottom: 0;
+    height: 300px;
+    padding-bottom: 50px;
+}
+
+footer > article
+{
+    height:300px;
+}
+
+article
+{
+    width: 33%;
+    display:inline-block;
+    text-align: center;
+    color: white;
+    
+}
+
+article > h2
+{
+    font-family: 'FFORWARD';
+    font-size: 250%;
+    color: white;
+}
+
+article > ul
+{
+    font-size: 200%;
+    list-style-type: none;
+}
+
+article > ul > li 
+{
+    margin: 20px;
 }
 
 
