@@ -1,15 +1,39 @@
 
 
 @font-face {
-    font-family: "joystix_monospace";
-    src: url("../fonts/joystix\ monospace.otf") format("opentype");
+    font-family: "FForward";
+    src: url("../fonts/FFFFORWA.TTF") format("opentype");
 }
 
 @font-face
 {
-    font-family: "FForward";
-    src:url("../fonts/FFFFORWA.TTF") format(truetype)
+    font-family: "joystix_monospace";
+    src:url("../fonts/joystix\ monospace.otf") format(truetype)
 }
+
+@font-face
+{
+    font-family: "RetroG";
+    src:url("../fonts/Retro\ Gaming.ttf") format(truetype)
+}
+
+@font-face
+{
+    font-family: "Rune";
+    src:url("../fonts/runescape_uf.ttf") format(truetype)
+    /* faut installer font forge pour edit le fichier */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 body
@@ -17,13 +41,40 @@ body
     background-image: url(../images/rest/background_portfo_switch.gif);
     color: black;
     background-color: rgb(27, 26, 26);
+    height: 200vh; /* pour permettre le scroll */
+
 }
 
 header
 {
-    background-color: #b9c2c7;
-    padding: 3px;
+    height: 15%;
 }
+
+.header
+{
+    background-color: #b9c2c7;
+    /* padding: 3px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 25px;
+    /* background: white; */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.35s ease;
+    z-index: 1000;
+}
+
+.header--hidden {
+  transform: translateY(-100%);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+
 
 .navbar_div > a > img
 {
@@ -56,8 +107,8 @@ hr
 
 p
 {
-    font-family: "joystix_monospace";
-    font-size: 200%;
+    font-family: "FForward";
+    font-size: 175%;
     text-align : center;
     padding: 50px;
 }
@@ -81,11 +132,15 @@ blockquote
 
 .navbar
 {
-    margin: 5px;
+    margin: -5px 7% 0px 5%;
     text-align: center;
     display: flex;
     flex-direction: row;
-    width: 97%;
+    /* height: 75%; */
+    /* margin-right: 7%;
+    margin-left: 7%; */
+
+    /* width: 80%; */
 }
 
 .navbar > nav
@@ -118,7 +173,7 @@ li
     align-items: center;
     justify-content: space-between;
     padding: 0 2em;
-    width: 100%;
+    /* width: 100%; */
 }
 /*
 .navbar_div
@@ -137,7 +192,7 @@ section
     border-radius: 1px 0px 0px 0px;
     background-color: #b9c2c7;
     /* or silver */
-    margin: 30px 180px;
+    margin: 30px 170px;
     padding: 5px 10px;
     border-style: solid;
     border-width:4px;
@@ -243,7 +298,7 @@ article
 
 article > h2
 {
-    font-family: 'FFORWARD';
+    font-family: 'joystix_monospace';
     font-size: 250%;
     color: white;
 }
@@ -293,19 +348,19 @@ span.onclick = function() {
 
 .title_cube
 {
-    font-family: 'FFORWARD';
+    font-family: 'joystix_monospace';
     font-size: 300%;
 }
 
 .forma_title
 {
-    font-family: 'FFORWARD';
+    font-family: 'joystix_monospace';
     font-size: 250%;
 }
 
 .forma_date
 {
-    font-family: 'FFORWARD';
+    font-family: 'joystix_monospace';
     font-size: 125%;
 
 }
