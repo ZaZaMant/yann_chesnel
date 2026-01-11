@@ -12,6 +12,24 @@
 </head>
 <body>
 	<header class="header">
+        <script>
+            let lastScrollTop = 0;
+            const header = document.querySelector('.header');
+
+            window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // scroll vers le bas
+                header.classList.add('header--hidden');
+            } else {
+                // scroll vers le haut
+                header.classList.remove('header--hidden');
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // sécurité
+            });
+        </script>
     <section class="navbar">
         <div class="navbar_div">
             <a href="../fr/portfolio_yc_home_fr.html">
@@ -80,6 +98,11 @@
 			<h2 class="title_cube"> 6 : Travailler et s'organiser en équipe (F) </h2>
 			<hr>
 			<a class="basic_link" href="./comp6_fr.html"> Le projet -> </a>
+		</section>
+        <section class="big_sect">
+			<h2 class="title_cube"> création d'un site style Tripavisor </h2>
+			<hr>
+			<a class="basic_link" href="./a7.html"> Le projet -> </a>
 		</section>
 	</main>
     <footer id="footer">

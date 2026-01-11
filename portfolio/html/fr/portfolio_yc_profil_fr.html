@@ -12,6 +12,24 @@
 </head>
 <body>
   <header class="header">
+    <script>
+            let lastScrollTop = 0;
+            const header = document.querySelector('.header');
+
+            window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // scroll vers le bas
+                header.classList.add('header--hidden');
+            } else {
+                // scroll vers le haut
+                header.classList.remove('header--hidden');
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // sécurité
+            });
+        </script>
     <section class="navbar">
         <div class="navbar_div">
           <a href="../fr/portfolio_yc_home_fr.html">
@@ -84,6 +102,20 @@
       </p>
     </section>   
       </div>
+    </section>
+    <section>
+      <h3 class="forma_title"> Stage Asten : pole Retail </h3>
+      <h4 class="forma_date"> 2025 (23/03 - 31/05) </h4>
+      <hr>
+      <p>
+        J'ai eu la chance d'effectuer un stage dans l'entreprise "Groupe Asten" a Brest,
+        dans laquel j'ai intégré l'équipe "retail", et j'ai pu travailer et découvrir
+        de nouveaux outils (DKMS,Zabbix...).<br><br>
+        J'avais pour mission originellement d'implémenter DKMS dans une de leurs solutions
+        de caisse pour faciliter la maintenance, puis j'ai travaillé sur un moyen d'obtenir
+        des métriques sur les caisses (a l'aide de Zabbix)<br><br>
+        J'ai également pu renforcer mes compétences en pytho et en informatique de manière général
+      </p>
     </section>
   </main>
   <footer id="footer">

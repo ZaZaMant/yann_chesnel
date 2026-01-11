@@ -12,6 +12,24 @@
 </head>
 <body>
   <header class="header">
+    <script>
+            let lastScrollTop = 0;
+            const header = document.querySelector('.header');
+
+            window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // scroll vers le bas
+                header.classList.add('header--hidden');
+            } else {
+                // scroll vers le haut
+                header.classList.remove('header--hidden');
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // sécurité
+            });
+        </script>
     <section class="navbar">
         <div class="navbar_div">
           <a href="../fr/portfolio_yc_home_fr.html">
@@ -21,9 +39,9 @@
                 <div>
                     <ul class="bar">
                         <li><a href="./portfolio_yc_profil_fr.html">Profil</a></li>
-                        <li><a href="./portfolio_yc_IUT_fr.html">Projets_IUT</a></li>
-                        <li><a href="./portfolio_yc_gallery_fr.html">Projets_perso</a></li>
-                        <li><a href="#footer">Contacts</a></li>
+                        <li><a href="./portfolio_yc_IUT_fr.html">Projets IUT</a></li>
+                        <li><a href="./portfolio_yc_gallery_fr.html">Galerie</a></li>
+                        <li><a href="../../CV_CHESNEL_Yann.pdf"> CV </a> </li><li><a href="#footer">Contacts</a></li>
                     </ul>
                 </div>
             </nav>
@@ -49,7 +67,7 @@
       </section>
       <section>
         <h2 class="title_cube"> Les autres compétences : </h2>
-        <p></p>
+        <br><br>
         <section class="button">
           <ul>
             <li> <a href="./comp1_fr.html"> compétence 1 (A) </a> </li>

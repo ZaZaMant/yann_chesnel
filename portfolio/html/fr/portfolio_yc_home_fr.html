@@ -13,6 +13,24 @@
 <body>
 
     <header class="header">
+        <script>
+            let lastScrollTop = 0;
+            const header = document.querySelector('.header');
+
+            window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // scroll vers le bas
+                header.classList.add('header--hidden');
+            } else {
+                // scroll vers le haut
+                header.classList.remove('header--hidden');
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // sécurité
+            });
+        </script>
         <section class="navbar">
             <div class="navbar_div">
                 <a href="../fr/portfolio_yc_home_fr.html">
@@ -35,6 +53,8 @@
             </div>
         </section>
     </header>
+
+    
     <div class="bandeau_prez">
         <!--<img src="../../images/gifs/spinning_head.gif"> -->
         <h1> - Bienvenue - </h1>
@@ -45,7 +65,7 @@
         <section>
             <div class="nom_pre_age_cv_tronche">
                 <div>
-                    <h2> CHESNEL <br> YANN 19 ans </h2>
+                    <h3 class="name"> CHESNEL <br> YANN 19 ans </h3>
                 </div>
                 <div class="tronche_cv">
                     
@@ -87,10 +107,10 @@
                     Profil
                 </a>
                 <a href="./portfolio_yc_IUT_fr.html" class="boutton">
-                    Projets_IUT
+                    Projet IUT
                 </a>
                 <a href="./portfolio_yc_gallery_fr.html" class="boutton">
-                    Projets_perso
+                    Galerie
                 </a>
                 <a href="#footer" class="boutton">
                     Contacts

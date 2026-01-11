@@ -25,24 +25,13 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 body
 {
     background-image: url(../images/rest/background_portfo_switch.gif);
     color: black;
     background-color: rgb(27, 26, 26);
     height: 200vh; /* pour permettre le scroll */
-
+    padding-top: 8em;
 }
 
 header
@@ -58,7 +47,7 @@ header
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 25px;
+    padding: 15px 0px;
     /* background: white; */
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.35s ease;
@@ -102,13 +91,16 @@ hr
 {
     border-style: solid;
     border-color: black;
+    background-color: black;
+    height: 3px;
 }
 
 
 p
 {
-    font-family: "FForward";
-    font-size: 175%;
+    font-family: "RetroG";
+    font-size: 250%;
+    font-weight: 1000;
     text-align : center;
     padding: 50px;
 }
@@ -132,15 +124,16 @@ blockquote
 
 .navbar
 {
-    margin: -5px 7% 0px 5%;
+    margin: 0.5% 5% 0px 5%;
     text-align: center;
     display: flex;
     flex-direction: row;
-    /* height: 75%; */
-    /* margin-right: 7%;
+    justify-content: center;
+    height: 75%; 
+/*    margin-right: 7%;
     margin-left: 7%; */
+    /*width: 80%;*/
 
-    /* width: 80%; */
 }
 
 .navbar > nav
@@ -156,7 +149,7 @@ blockquote
     flex-wrap: nowrap;
     list-style: none;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 225%;
     font-weight: 600;
 }
 
@@ -173,7 +166,7 @@ li
     align-items: center;
     justify-content: space-between;
     padding: 0 2em;
-    /* width: 100%; */
+    width: 100%;
 }
 /*
 .navbar_div
@@ -287,8 +280,18 @@ footer > article
     height:300px;
 }
 
+footer > article > ul > li
+{
+    font-size: 100%;
+    font-family: 'RetroG';
+}
+
 article
 {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
     width: 33%;
     display:inline-block;
     text-align: center;
@@ -296,10 +299,10 @@ article
     
 }
 
-article > h2
+footer > article > ul > li > h2
 {
     font-family: 'joystix_monospace';
-    font-size: 250%;
+    font-size: 150%;
     color: white;
 }
 
@@ -315,6 +318,12 @@ article > ul > li
 }
 
 
+.name
+{
+    font-family: 'joystix_monospace';
+    font-size: 300%;
+    letter-spacing: 4px;
+}
 
 /*
 
@@ -352,6 +361,7 @@ span.onclick = function() {
     font-size: 300%;
 }
 
+
 .forma_title
 {
     font-family: 'joystix_monospace';
@@ -368,6 +378,8 @@ span.onclick = function() {
 .button
 {
     display: flex;
+    justify-content: center;
+    height: 150%;
 }
 
 .button > ul
@@ -378,7 +390,7 @@ span.onclick = function() {
     flex-wrap: nowrap;
     list-style: none;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 140%;
     font-weight: 600;
     width: 100%;
     padding: 0px;
@@ -391,6 +403,34 @@ span.onclick = function() {
 }
 
 .button > ul > li > a
+{
+    background-color: black;
+    padding: 20px;
+    border-style: dashed;
+    border-radius: 1px;
+    border-color: white grey grey white;
+}
+
+.button_wide
+{
+    display: flex;
+}
+
+.button_wide > ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 110%;
+    font-weight: 600;
+    width: 100%;
+    padding: 0px;
+}
+
+.button_wide > ul > li > a
 {
     background-color: black;
     padding: 20px;
