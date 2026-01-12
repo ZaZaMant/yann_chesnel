@@ -13,6 +13,24 @@
 
 <body>
   <header class="header">
+    <script>
+            let lastScrollTop = 0;
+            const header = document.querySelector('.header');
+
+            window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // scroll vers le bas
+                header.classList.add('header--hidden');
+            } else {
+                // scroll vers le haut
+                header.classList.remove('header--hidden');
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // sécurité
+            });
+        </script>
     <section class="navbar">
         <div class="navbar_div">
             <a href="../eng/portfolio_yc_home_eng.html">
@@ -45,15 +63,14 @@
     <section>
       <h2 class="title_cube"> Gallery </h2>
       <hr>
-      <p> Here you can check some of my draws I did. I started during my first year of high school. Have a look ! They won't
-        stay here eternaly !
+      <p> Here you can check some of my draws I did. I started during my first year of high school. Have a look.
       </p>
     </section>
   </section>
   <section>
       <div class="gallery">
         <img src="../../images/gallery/d5.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 1<br><br>
+                  <blockquote> picture number 1<br><br>
                     Characters : two unnammed characters<br><br>
                     context : They are fighting with chairs<br><br>
                     Done with : pencil<br><br>
@@ -64,7 +81,7 @@
       <br>
       <div class="gallery">
         <img src="../../images/gallery/d8.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 2<br><br>
+                  <blockquote> picture number 2<br><br>
                     Characters : Bosculna (current name)<br><br>
                     context : Interesting design but flowed.<br><br>
                     I tried to draw his entire body this time.<br><br>
@@ -76,7 +93,7 @@
       <br>
       <div class="gallery">
         <img src="../../images/gallery/d9.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 3<br><br>
+                  <blockquote> picture number 3<br><br>
                     Characters : unnamed humanoid character<br><br>
                     context : First sketch of this character<br>
                     His design is inconsistant too.<br>
@@ -89,7 +106,7 @@
       <br>
       <div class="gallery">
         <img src="../../images/gallery/d10.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 4<br><br>
+                  <blockquote> picture number 4<br><br>
                     Characters : Only tentacles here<br><br>
                     context : this draw was realised for an english lesson<br>
                     We had to chose a marking quote.<br>
@@ -102,7 +119,7 @@
       <br>
       <div class="gallery">
         <img src="../../images/gallery/d11.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 5<br><br>
+                  <blockquote> picture number 5<br><br>
                     Characters : Malina (from the game "Helltaker" by "Vanrippear")<br><br>
                     context : I tried to draw her my way.<br><br>
                     Done with : pencil and Micro-pigments<br><br>
@@ -113,7 +130,7 @@
       <br>
       <div class="gallery">
         <img src="../../images/gallery/d12.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 6<br><br>
+                  <blockquote> picture number 6<br><br>
                     Characters : Bosculna<br><br>
                     context : First sketch of this character<br>
                     They, changed a bit more.<br><br>
@@ -125,7 +142,7 @@
       <br>
       <div class="gallery">
         <img src="../../images/gallery/d13.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 7
+                  <blockquote> picture number 7
                     Characters : a crowd and a bus
                     context : This draw was realised for an english lesson
                     We had to show a problem in the world, in the futur.
@@ -138,7 +155,7 @@
       <br>
       <div class="gallery">
         <img src="../../images/gallery/d14.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 8<br><br>
+                  <blockquote> picture number 8<br><br>
                     Characters : Unnamed humanoid character<br><br>
                     context : I tried to change some things in his design.<br>
                     Some lines of my pencil didn't make it trought the scanning<br><br>
@@ -150,7 +167,7 @@
       <br>
       <div class="gallery">
         <img src="../../images/gallery/d15.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 9<br><br>
+                  <blockquote> picture number 9<br><br>
                     Characters : Unnamed cyborg <br><br>
                     context : His design was interesting, I wanted to show the charisma<br>
                     and aura his "hair" gave him.<br><br>
@@ -162,7 +179,7 @@
       <br>
       <div class="gallery">
         <img src="../../images/gallery/d16.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 10<br><br>
+                  <blockquote> picture number 10<br><br>
                     Characters : Zdrada and Malina (from the game "Helltaker" by "Vanrippear")<br><br>
                     context : A draw by Vanrippear, remade my way.<br><br>
                     Done with : pencil and Micro-pigments<br><br>
@@ -173,7 +190,7 @@
       <br>
       <div class="gallery">
         <img src="../../images/gallery/d17.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 18
+                  <blockquote> picture number 11
                     Characters : Unnamed cyborg
                     context : I tried to do some perspective and to increase the number
                     of "strands" to see the result.
@@ -185,7 +202,7 @@
       <br>
       <div class="gallery">
         <img src="../../images/gallery/d18.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 19<br><br>
+                  <blockquote> picture number 12<br><br>
                     Characters : Unnamed cyborg<br><br>
                     context : A larger, more detailed illustration of this character.<br>
                     With some tests on the texture of the cloak.<br><br>
@@ -197,7 +214,7 @@
       <br>
       <div class="gallery">
         <img src="../../images/gallery/d19.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 20<br><br>
+                  <blockquote> picture number 13<br><br>
                     Characters : Nameless knight<br><br>
                     context : Draw made after I challenged myself to do a draw every day.<br><br>
                     Done with : Iron quill (G-pen), ink and pencil<br><br>
@@ -208,7 +225,7 @@
       <br>
       <div class="gallery">
         <img src="../../images/gallery/d26.png" alt=" une image devait apparaître ici ">
-                  <blockquote> draw number 25<br><br>
+                  <blockquote> picture number 14<br><br>
                     Characters : chalisfer,bosculna, and lots of nameless characters<br>
                     context : This is one of the numerous a2 papers on which<br>
                     I draw lots of things without real purpose or goal. Its mostly<br>
@@ -469,31 +486,34 @@
 
   </main>
   <footer id="footer">
-    <article>
-        <h2> Coordinates </h2>
+      <article>
+          <!-- <h2> Coordonnées </h2> -->
+          <ul>
+            <li><h2> Coordinates </h2></li>
+              <li><a href="https://www.google.com/maps/place/22300+Lannion/@48.7454479,-3.469739,13z/data=!3m1!4b1!4m6!3m5!1s0x48122b8ac523c539:0x40ca5cd36e63400!8m2!3d48.732084!4d-3.459144!16zL20vMDYzdnY0?entry=ttu">
+                  Lannion</a></li>
+                  <br>
+              <li><a href="https://www.google.com/maps/place/Brest/@48.4084918,-4.5407846,13z/data=!3m1!4b1!4m15!1m8!3m7!1s0x48122b8ac523c539:0x40ca5cd36e63400!2s22300+Lannion!3b1!8m2!3d48.732084!4d-3.459144!16zL20vMDYzdnY0!3m5!1s0x4816bbe1d9925b93:0xc6488358179c30ab!8m2!3d48.3899275!4d-4.4855959!16zL20vMGZ3Zm0?entry=ttu">
+                  Brest</a></li>
+          </ul>
+      </article>
+      <article>
         <ul>
-            <li><a href="https://www.google.com/maps/place/22300+Lannion/@48.7454479,-3.469739,13z/data=!3m1!4b1!4m6!3m5!1s0x48122b8ac523c539:0x40ca5cd36e63400!8m2!3d48.732084!4d-3.459144!16zL20vMDYzdnY0?entry=ttu">
-                Lannion</a></li>
-            <li><a href="https://www.google.com/maps/place/Brest/@48.4084918,-4.5407846,13z/data=!3m1!4b1!4m15!1m8!3m7!1s0x48122b8ac523c539:0x40ca5cd36e63400!2s22300+Lannion!3b1!8m2!3d48.732084!4d-3.459144!16zL20vMDYzdnY0!3m5!1s0x4816bbe1d9925b93:0xc6488358179c30ab!8m2!3d48.3899275!4d-4.4855959!16zL20vMGZ3Zm0?entry=ttu">
-                Brest</a></li>
-        </ul>
-    </article>
-    <article>
-        <h2> Navigation </h2>
-        <ul>
-            <li><a href="./portfolio_yc_profil_eng.html">About</a></li>
-            <li><a href="./portfolio_yc_IUT_eng.html">Class work</a></li>
-            <li><a href="./portfolio_yc_gallery_eng.html">Gallery</a></li>
-        </ul>
-    </article>
-    <article>
-        <h2> Contacts </h2>
-        <ul>
-            <li><a href="mailto:vieilabre29@gmail.com">Mail</a> @vieilabre29@gmail.com" </li>
-            <li> my number : 07 36 30 36 30 </li>
-            <li><a href="../../CV_CHESNEL_Yann.pdf">My Resume</a></li>
-        </ul>
-    </article>
-</footer>
+              <li><h2> Navigation </h2></li>
+              <li><a href="./portfolio_yc_profil_eng.html">About</a></li>
+              <li><a href="./portfolio_yc_IUT_eng.html">Class work</a></li>
+              <li><a href="./portfolio_yc_gallery_eng.html">Gallery</a></li>
+          </ul>
+      </article>
+      <article>
+          <!-- <h2> Contacts </h2> -->
+          <ul>
+            <li><h2> Contacts </h2></li>
+              <li><a href="mailto:yann.chesnel6@gmail.com">@yann.chesnel6@gmail.com</a> </li>
+              <li> 07 36 30 36 30 </li>
+              <li><a href="../../CV_CHESNEL_Yann.pdf">My resume</a></li>
+          </ul>
+      </article>
+  </footer>
 </body>
 </html>

@@ -13,6 +13,24 @@
 <body>
 
     <header class="header">
+        <script>
+            let lastScrollTop = 0;
+            const header = document.querySelector('.header');
+
+            window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // scroll vers le bas
+                header.classList.add('header--hidden');
+            } else {
+                // scroll vers le haut
+                header.classList.remove('header--hidden');
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // sécurité
+            });
+        </script>
         <section class="navbar">
             <div class="navbar_div">
                 <a href="../eng/portfolio_yc_home_eng.html">
@@ -56,7 +74,11 @@
         </section>
         <hr>
         <section>
-            <p> Hello ! I m a student in BUT computer science at <a href="https://iut-lannion.univ-rennes.fr/">"l'IUT" of Lannion.</a> (Brittany) </p>
+            <p> Hello ! I m a student in final year (third) of my University Bachelor of Technology (BUT) in computer science 
+                with a Data Science and Artificial Intelligence specialization at 
+                <a href="https://iut-lannion.univ-rennes.fr/">the "IUT" of Lannion.</a> (Brittany) 
+                </p>
+
             <!--
             <img src="../images/hello_chalisfer.png">
             <img class="left" src="../images/chalisfer_glass">
@@ -77,9 +99,12 @@
                     <img src="../../images/icons/php.png">
                     <img src="../../images/icons/python.png">
                     <img src="../../images/icons/java.png">
+                    <img src="../../images/icons/Javascript_logo.png">
+                    <img src="../../images/icons/zabbix_logo.png">
+
                 </section>
         </section>
-        <section>
+        <!-- <section>
             <h2> Check those links to wander on my website </h2>
             <section class="button">
                 <ul>
@@ -88,34 +113,37 @@
                     <li> <a href="./portfolio_yc_gallery_eng.html"> My projects </a> </li>
                 </ul>
             </section>
-        </section>
+        </section> -->
         <hr>
     </main>
     <footer id="footer">
-        <article>
-            <h2> Coordinates </h2>
-            <ul>
-                <li><a href="https://www.google.com/maps/place/22300+Lannion/@48.7454479,-3.469739,13z/data=!3m1!4b1!4m6!3m5!1s0x48122b8ac523c539:0x40ca5cd36e63400!8m2!3d48.732084!4d-3.459144!16zL20vMDYzdnY0?entry=ttu">
-                    Lannion</a></li>
-                <li><a href="https://www.google.com/maps/place/Brest/@48.4084918,-4.5407846,13z/data=!3m1!4b1!4m15!1m8!3m7!1s0x48122b8ac523c539:0x40ca5cd36e63400!2s22300+Lannion!3b1!8m2!3d48.732084!4d-3.459144!16zL20vMDYzdnY0!3m5!1s0x4816bbe1d9925b93:0xc6488358179c30ab!8m2!3d48.3899275!4d-4.4855959!16zL20vMGZ3Zm0?entry=ttu">
-                    Brest</a></li>
-            </ul>
-        </article>
-        <article>
-            <h2> Navigation </h2>
-            <ul>
-                <li><a href="./portfolio_yc_profil_eng.html">About</a></li>
-                <li><a href="./portfolio_yc_IUT_eng.html">Class work</a></li>
-                <li><a href="./portfolio_yc_gallery_eng.html"> Gallery </a></li>
-            </ul>
-        </article>
-        <article>
-            <h2> Contacts </h2>
-            <ul>
-                <li><a href="mailto:vieilabre29@gmail.com">Mail</a> @vieilabre29@gmail.com" </li>
-                <li> my number : 07 36 30 36 30 </li>
-                <li><a href="../../CV_CHESNEL_Yann.pdf">My Resume</a></li>
-            </ul>
-        </article>
-    </footer>
+      <article>
+          <!-- <h2> Coordonnées </h2> -->
+          <ul>
+            <li><h2> Coordinates </h2></li>
+              <li><a href="https://www.google.com/maps/place/22300+Lannion/@48.7454479,-3.469739,13z/data=!3m1!4b1!4m6!3m5!1s0x48122b8ac523c539:0x40ca5cd36e63400!8m2!3d48.732084!4d-3.459144!16zL20vMDYzdnY0?entry=ttu">
+                  Lannion</a></li>
+                  <br>
+              <li><a href="https://www.google.com/maps/place/Brest/@48.4084918,-4.5407846,13z/data=!3m1!4b1!4m15!1m8!3m7!1s0x48122b8ac523c539:0x40ca5cd36e63400!2s22300+Lannion!3b1!8m2!3d48.732084!4d-3.459144!16zL20vMDYzdnY0!3m5!1s0x4816bbe1d9925b93:0xc6488358179c30ab!8m2!3d48.3899275!4d-4.4855959!16zL20vMGZ3Zm0?entry=ttu">
+                  Brest</a></li>
+          </ul>
+      </article>
+      <article>
+        <ul>
+              <li><h2> Navigation </h2></li>
+              <li><a href="./portfolio_yc_profil_eng.html">About</a></li>
+              <li><a href="./portfolio_yc_IUT_eng.html">Class work</a></li>
+              <li><a href="./portfolio_yc_gallery_eng.html">Gallery</a></li>
+          </ul>
+      </article>
+      <article>
+          <!-- <h2> Contacts </h2> -->
+          <ul>
+            <li><h2> Contacts </h2></li>
+              <li><a href="mailto:yann.chesnel6@gmail.com">@yann.chesnel6@gmail.com</a> </li>
+              <li> 07 36 30 36 30 </li>
+              <li><a href="../../CV_CHESNEL_Yann.pdf">My resume</a></li>
+          </ul>
+      </article>
+  </footer>
 </body>

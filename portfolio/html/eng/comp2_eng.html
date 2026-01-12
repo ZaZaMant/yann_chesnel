@@ -12,6 +12,24 @@
 </head>
 <body>
   <header class="header">
+    <script>
+            let lastScrollTop = 0;
+            const header = document.querySelector('.header');
+
+            window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // scroll vers le bas
+                header.classList.add('header--hidden');
+            } else {
+                // scroll vers le haut
+                header.classList.remove('header--hidden');
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // sécurité
+            });
+        </script>
     <section class="navbar">
       <div class="navbar_div">
           <a href="../eng/portfolio_yc_home_eng.html">
@@ -53,11 +71,11 @@
         <br><br>
         <section class="button">
           <ul>
-            <li> <a href="./comp1_eng.html"> compétence 1 (A) </a> </li>
-            <li> <a href="./comp3_eng.html"> compétence 3 (C) </a> </li>
-            <li> <a href="./comp4_eng.html"> compétence 4 (D) </a> </li>
-            <li> <a href="./comp5_eng.html"> compétence 5 (E) </a> </li>
-            <li> <a href="./comp6_eng.html"> compétence 6 (F) </a> </li>
+            <li> <a href="./comp1_eng.html"> skill 1 (A) </a> </li>
+            <li> <a href="./comp3_eng.html"> skill 3 (C) </a> </li>
+            <li> <a href="./comp4_eng.html"> skill 4 (D) </a> </li>
+            <li> <a href="./comp5_eng.html"> skill 5 (E) </a> </li>
+            <li> <a href="./comp6_eng.html"> skill 6 (F) </a> </li>
           </ul>
         </section>
       </section>
